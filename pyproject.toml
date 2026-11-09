@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "picmany-viewer"
+version = "0.1.0"
+description = "Python client and CLI for PicMany, the free Instagram viewer: open public Instagram profiles, posts, reels, stories and topics on picmany.com without an account."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "social-content-fetcher" }]
+keywords = [
+  "instagram",
+  "instagram-viewer",
+  "anonymous-instagram-viewer",
+  "instagram-without-account",
+  "instagram-profile-viewer",
+  "instagram-story-viewer",
+  "picuki-alternative",
+  "picmany",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://picmany.com"
+Source = "https://github.com/social-content-fetcher/picmany-viewer"
+Documentation = "https://github.com/social-content-fetcher/picmany-viewer/tree/main/docs"
+
+[project.scripts]
+picmany-viewer = "picmany_viewer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
